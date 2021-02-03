@@ -13,7 +13,6 @@ function CheckPingPong(bot, channelID, message) {
                 message: 'Pong!'
             });
             return true;
-            break;
     }
 }
 

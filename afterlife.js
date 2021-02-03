@@ -3,7 +3,7 @@ var logger = require('winston');
 var auth = require('./auth.json');
 
 // My features
-var PingPong = require('./Features/PingPong/pingpong.js');
+var PingPong = require('./Features/PingPong/pingpong');
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
