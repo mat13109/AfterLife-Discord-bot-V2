@@ -6,6 +6,7 @@
     "author": "Mat_Mox",
     "dependencies": {
         "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+        "glob": "^7.1.6",
         "winston": "^3.3.3"
     }
 }

@@ -1,10 +1,16 @@
 //#region Includes
 var Discord = require('discord.io');
 var logger = require('winston');
+var glob = require('glob');
+var path = require('path');
 var auth = require('./auth.json');
 
 // Our features
-var PingPong = require('./Features/PingPong/pingpong');
+var ALFeatures = [];
+glob.sync('./Features/**/*.js').forEach(function (file) {
+    ALFeatures.push(require(path.resolve(file)));
+});
+
 //#endregion
 
 //#region Configure logger settings
@@ -36,7 +42,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     // It will listen for messages that will start with `!`
     if (message.substring(0, 1) == '/') {
 
-        if (PingPong.CheckPingPong(bot, channelID, message)) return;
+        ALFeatures.forEach(element => {
+            if (element.OnMessage(bot, user, userID, channelID, message, evt)) return;
+        });
 
     }
 });

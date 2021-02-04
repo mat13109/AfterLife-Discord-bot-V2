@@ -10,12 +10,12 @@ function OnMessage(bot, user, userID, channelID, message, evt) {
     args = args.splice(1);
 
     switch (cmd) {
-        // !ping command
-        case 'ping':
+        // !test command
+        case 'test':
             // Sends a message
             bot.sendMessage({
                 to: channelID,
-                message: 'Pong!'
+                message: 'Ok.'
             });
             return true; // Function stops here
     }
