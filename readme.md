@@ -1,5 +1,10 @@
 # AfterLife Discord Bot
-## Project Management
+## Project  
+### Commands  
+/Ping
+/Pong
+test
+### To-do  
 [Public Codecks](https://open.codecks.io/afterlife-discord-bot)
 ## Use
 ### Install
@@ -24,6 +29,8 @@ At this point in time, the bot can only react to message.
 Create a new folder in Features and a .js file inside it  
 Add the following:  
 ```
+var Constants = require('./../../Data/constants.json')  
+
 function OnMessage(bot, user, userID, channelID, message, evt) {
     // Code here
 }
