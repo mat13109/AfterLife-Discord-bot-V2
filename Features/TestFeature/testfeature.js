@@ -10,7 +10,7 @@ function OnMessage(bot, user, userID, channelID, message, evt) {
     args = args.splice(1);
 
     switch (cmd) {
-        // !test command
+        // /test command
         case 'test':
             // Sends a message
             bot.sendMessage({
