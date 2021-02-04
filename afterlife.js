@@ -30,9 +30,9 @@ var bot = new Discord.Client({
 
 //#region Start
 bot.on('ready', function (evt) {
-    // logger.info('Connected');
-    // logger.info('Logged in as: ');
-    // logger.info(bot.username + ' - (' + bot.id + ')');
+    logger.info('Connected');
+    logger.info('Logged in as: ');
+    logger.info(bot.username + ' - (' + bot.id + ')');
 });
 //#endregion
 
