@@ -1,8 +1,9 @@
 # AfterLife Discord Bot
-## Install
+## Use
+### Install
 Install Node.js
 Reboot
-run "npm install discord.io winston –save"
+run "npm install discord.io winston -save"
 Create "auth.json"
 Add the following:
 ```
@@ -10,5 +11,9 @@ Add the following:
     "token": "{YourBotToken}"
 }
 ```
-## Run
+### Run
 run "node afterlife.js"
+### Stop
+Ctrl + C to stop.
+## Progam new features
+To-do
