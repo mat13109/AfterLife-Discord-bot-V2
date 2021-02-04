@@ -42,7 +42,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     // It will listen for messages that will start with `/`
     if (message.substring(0, 1) == '/') {
 
-        // Going through all features and sropping when one is checked
+        // Going through all features and stopping when one is checked
         ALFeatures.forEach(element => {
             if (element.OnMessage(bot, user, userID, channelID, message, evt)) return;
         });
