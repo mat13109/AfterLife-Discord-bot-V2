@@ -1,4 +1,6 @@
 # AfterLife Discord Bot
+## Project Management
+[Public Codecks](https://open.codecks.io/afterlife-discord-bot)
 ## Use
 ### Install
 Install Node.js  
