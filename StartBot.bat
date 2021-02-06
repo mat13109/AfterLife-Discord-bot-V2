@@ -1,1 +1,2 @@
 node afterlife.js
+pause
