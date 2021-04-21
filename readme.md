@@ -1,8 +1,8 @@
 # AfterLife Discord Bot
 ## Project  
 ### Commands  
-/Ping
-/Pong
+/Ping  
+/Pong  
 test
 ### To-do  
 [Public Codecks](https://open.codecks.io/afterlife-discord-bot)
@@ -24,7 +24,7 @@ run "node afterlife.js"
 Ctrl + C to stop.  
 ## Progam new features
 ### To-know
-At this point in time, the bot can only react to message.  
+At this point in time, the bot can only react to messages.  
 ### How-to
 Create a new folder in Features and a .js file inside it  
 Add the following:  
